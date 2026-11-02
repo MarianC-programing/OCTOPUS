@@ -6,15 +6,15 @@ export function Process() {
   return (
     <section id="proceso" className="mx-auto max-w-6xl scroll-mt-8 px-6 py-28 md:py-36">
       <Reveal>
-        <SectionHeading eyebrow="Cómo trabajo">
-          Cuatro pasos. <span className="font-serif italic font-normal grad-text">Cero misterio.</span>
+        <SectionHeading eyebrow="Cómo trabajamos">
+          Cuatro pasos. <span className="grad-text">Cero misterio.</span>
         </SectionHeading>
       </Reveal>
       <ol className="grid gap-px overflow-hidden rounded-3xl border border-line bg-line md:grid-cols-4">
         {STEPS.map((s, i) => (
           <Reveal key={s.n} delay={i * 100} className="bg-ink">
             <li className="group h-full p-8 transition-colors duration-500 hover:bg-violet/10">
-              <span className="font-serif text-6xl italic text-lilac/30 transition-colors duration-500 group-hover:text-sky">
+              <span className="text-6xl font-normal tracking-tight text-lilac/30 transition-colors duration-500 group-hover:text-sky">
                 {s.n}
               </span>
               <h3 className="mt-8 text-xl font-medium tracking-tight">{s.title}</h3>

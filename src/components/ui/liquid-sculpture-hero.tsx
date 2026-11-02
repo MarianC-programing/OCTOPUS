@@ -1037,7 +1037,7 @@ export interface SculptureHeroProps {
 
   eyebrow?: string
   headline?: string
-  /** Words of the headline to set in the italic accent face. */
+  /** Words of the headline to set in the accent face. */
   headlineAccent?: string
   body?: string
   primaryCta?: SculptureHeroLink
@@ -1058,7 +1058,7 @@ export interface SculptureHeroProps {
   headingFont?: string
   accentFont?: string
   bodyFont?: string
-  /** Load the default Google Fonts (Geist + Instrument Serif, both OFL). */
+  /** Load the default Google Fonts (Geist, OFL). */
   loadFonts?: boolean
 
   /** 1 = default size for the breakpoint. */
@@ -1133,7 +1133,7 @@ const DEFAULTS = {
   textColor: "#151514",
   accentColor: "#151514",
   headingFont: "'Geist', 'Helvetica Neue', Arial, sans-serif",
-  accentFont: "'Instrument Serif', 'Times New Roman', serif",
+  accentFont: "'Geist', 'Helvetica Neue', Arial, sans-serif",
   bodyFont: "'Geist', 'Helvetica Neue', Arial, sans-serif",
 }
 
@@ -1219,7 +1219,7 @@ const CSS = `
 .sh-h1{font-family:var(--sh-head);font-weight:500;font-size:clamp(40px,min(6.6cqw,11.5cqh),124px);line-height:.92;letter-spacing:-.045em;margin:0;
   text-wrap:balance}
 .sh-h1 .sh-line{display:block}
-.sh-accent{font-family:var(--sh-accent);font-style:italic;font-weight:400;letter-spacing:-.02em;color:var(--sh-acc)}
+.sh-accent{font-family:var(--sh-accent);font-style:normal;font-weight:500;letter-spacing:-.045em;color:var(--sh-acc)}
 .sh-aside{max-width:400px;justify-self:end;padding-bottom:.6em}
 .sh-body{font-size:clamp(15px,1.1cqw,17px);line-height:1.5;letter-spacing:-.01em;margin:0 0 26px;opacity:.78;text-wrap:pretty}
 .sh-ctas{display:flex;flex-wrap:wrap;align-items:center;gap:22px}
@@ -1288,7 +1288,7 @@ function injectFonts() {
   l.id = id
   l.rel = "stylesheet"
   l.href =
-    "https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap"
+    "https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&display=swap"
   document.head.appendChild(l)
 }
 

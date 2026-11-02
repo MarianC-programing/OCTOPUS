@@ -1,5 +1,5 @@
 export const CONTACT = {
-  email: 'marianbarba1208@gmail.com',
+  email: 'marianoctopus.dev@gmail.com',
   github: 'https://github.com/MarianC-programing',
   linkedin: 'https://www.linkedin.com/in/marian-barba/',
 }
@@ -35,10 +35,10 @@ export const SERVICES = [
 ]
 
 export const STEPS = [
-  { n: '01', title: 'Conversamos', text: 'Me cuentas el problema, no la solución. Te digo con honestidad qué se puede hacer y qué no vale la pena.' },
+  { n: '01', title: 'Conversamos', text: 'Nos cuentas el problema, no la solución. Te decimos con honestidad qué se puede hacer y qué no vale la pena.' },
   { n: '02', title: 'Acordamos alcance', text: 'Qué entra, qué no, en cuánto tiempo y a qué costo. Por escrito y antes de escribir una línea de código.' },
   { n: '03', title: 'Construimos', text: 'Entregas parciales que puedes ver y probar. Si algo no encaja, se corrige temprano, no al final.' },
-  { n: '04', title: 'Publicamos y acompañamos', text: 'Despliegue funcionando, documentación básica y una persona a quien escribir cuando algo falle.' },
+  { n: '04', title: 'Publicamos y acompañamos', text: 'Despliegue funcionando, documentación básica y un equipo a quien escribir cuando algo falle.' },
 ]
 
 export const YES = [
@@ -88,9 +88,9 @@ export const STACK: Tech[] = [
 ]
 
 export const FAQ = [
-  { q: '¿Con qué tecnologías trabajas?', a: 'En frontend, React y Angular con TypeScript y Tailwind CSS. En backend, PHP con Laravel, C# / .NET, Node.js y Java. En datos, PostgreSQL (vía Supabase), MySQL, SQLite y Oracle. Elijo según el problema, no según la moda.' },
-  { q: '¿Haces solo frontend o también backend?', a: 'Ambos. Llevo el ciclo completo: requerimiento, diseño de la base de datos, backend, interfaz, pruebas y despliegue.' },
-  { q: '¿Cuánto tarda y cuánto cuesta?', a: 'Depende del alcance, y prefiero no inventar un número sin conocer tu caso. Después de una conversación corta te doy un estimado de tiempo y costo por escrito.' },
-  { q: '¿Dónde se publica lo que construyes?', a: 'Netlify, Vercel o GitHub Pages para sitios estáticos; Railway para aplicaciones con backend y base de datos; y servidores propios cuando el cliente lo requiere.' },
+  { q: '¿Con qué tecnologías trabajan?', a: 'En frontend, React y Angular con TypeScript y Tailwind CSS. En backend, PHP con Laravel, C# / .NET, Node.js y Java. En datos, PostgreSQL (vía Supabase), MySQL, SQLite y Oracle. Elegimos según el problema, no según la moda.' },
+  { q: '¿Hacen solo frontend o también backend?', a: 'Ambos. Cubrimos el ciclo completo: requerimiento, diseño de la base de datos, backend, interfaz, pruebas y despliegue.' },
+  { q: '¿Cuánto tarda y cuánto cuesta?', a: 'Depende del alcance, y preferimos no inventar un número sin conocer tu caso. Después de una conversación corta te damos un estimado de tiempo y costo por escrito.' },
+  { q: '¿Dónde se publica lo que construyen?', a: 'Netlify, Vercel o GitHub Pages para sitios estáticos; Railway para aplicaciones con backend y base de datos; y servidores propios cuando el cliente lo requiere.' },
   { q: '¿Qué pasa si necesito cambios después de la entrega?', a: 'Se define desde el inicio: qué cambios menores están incluidos y cómo se cotizan las ampliaciones. Sin sorpresas.' },
 ]

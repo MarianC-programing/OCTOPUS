@@ -8,17 +8,17 @@ export function Services() {
     <section id="servicios" className="mx-auto max-w-6xl scroll-mt-8 px-6 py-28 md:py-36">
       <Reveal>
         <SectionHeading
-          eyebrow="Qué hago"
-          lead="Cuatro cosas que hago bien, de principio a fin. Si lo que necesitas no está aquí, te lo digo y te recomiendo a quién acudir."
+          eyebrow="Qué hacemos"
+          lead="Cuatro cosas que hacemos bien, de principio a fin. Si lo que necesitas no está aquí, te lo decimos y te recomendamos a quién acudir."
         >
-          Lo que construyo, <span className="font-serif italic font-normal grad-text">sin rodeos.</span>
+          Lo que construimos, <span className="grad-text">sin rodeos.</span>
         </SectionHeading>
       </Reveal>
       <div className="grid gap-5 md:grid-cols-2">
         {SERVICES.map((s, i) => (
           <Reveal key={s.title} delay={i * 90}>
             <GlowCard className="h-full p-8 md:p-10">
-              <span className="font-serif text-5xl italic text-lilac/40">{String(i + 1).padStart(2, '0')}</span>
+              <span className="text-5xl font-normal tracking-tight text-lilac/40">{String(i + 1).padStart(2, '0')}</span>
               <h3 className="mt-6 text-2xl font-medium tracking-tight">{s.title}</h3>
               <p className="mt-3 leading-relaxed text-mist/70">{s.text}</p>
               <ul className="mt-6 flex flex-wrap gap-2">

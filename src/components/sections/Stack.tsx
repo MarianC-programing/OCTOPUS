@@ -34,7 +34,7 @@ export function Stack() {
             eyebrow="Herramientas"
             lead="Un stack amplio, elegido según el problema: no el mismo martillo para todo."
           >
-            Con qué <span className="font-serif italic font-normal grad-text">construyo.</span>
+            Con qué <span className="grad-text">construimos.</span>
           </SectionHeading>
         </Reveal>
       </div>

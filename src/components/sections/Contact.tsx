@@ -35,10 +35,10 @@ export function Contact() {
       <Reveal className="relative mx-auto max-w-4xl text-center">
         <p className="mb-6 text-xs uppercase tracking-[0.14em] text-lilac/80">Contacto</p>
         <h2 className="text-5xl font-medium leading-[0.98] tracking-[-0.04em] md:text-8xl">
-          ¿Tienes algo <span className="font-serif italic font-normal grad-text">en mente?</span>
+          ¿Tienes algo <span className="grad-text">en mente?</span>
         </h2>
         <p className="mx-auto mt-6 max-w-lg text-lg text-mist/70">
-          Cuéntame qué necesitas construir. Respondo por correo y, si tiene sentido, lo conversamos en una llamada corta.
+          Cuéntanos qué necesitas construir. Respondemos por correo y, si tiene sentido, lo conversamos en una llamada corta.
         </p>
         <a
           href={mailto}

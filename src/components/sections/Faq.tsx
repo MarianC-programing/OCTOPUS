@@ -8,7 +8,7 @@ export function Faq() {
     <section id="faq" className="mx-auto max-w-4xl scroll-mt-8 px-6 py-28 md:py-36">
       <Reveal>
         <SectionHeading eyebrow="FAQ">
-          Preguntas <span className="font-serif italic font-normal grad-text">frecuentes.</span>
+          Preguntas <span className="grad-text">frecuentes.</span>
         </SectionHeading>
       </Reveal>
       <div className="divide-y divide-line border-y border-line">

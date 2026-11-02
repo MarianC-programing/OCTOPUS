@@ -34,9 +34,9 @@ export default function App() {
         eyebrow="Desarrollo web · Panamá"
         headline={'Software que\nhace lo que dice.'}
         headlineAccent="hace lo que dice."
-        body="Diseño y programo sitios, sistemas y apps a medida. Te digo qué se puede hacer, cuánto toma y qué no vale la pena."
+        body="Diseñamos y programamos sitios, sistemas y apps a medida. Te decimos qué se puede hacer, cuánto toma y qué no vale la pena."
         primaryCta={{ label: 'Hablemos', href: '#contacto' }}
-        secondaryCta={{ label: 'Cómo trabajo', href: '#proceso' }}
+        secondaryCta={{ label: 'Cómo trabajamos', href: '#proceso' }}
         hint="Mueve el cursor sobre el pulpo"
         hintTouch="Toca el pulpo"
         backdropText="octopus"

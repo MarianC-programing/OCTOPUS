@@ -13,12 +13,12 @@ export function About() {
       <div className="grid items-start gap-12 md:grid-cols-[1.2fr_1fr]">
         <Reveal>
           <SectionHeading eyebrow="Quién está detrás">
-            Soy Marian, <span className="font-serif italic font-normal grad-text">desarrolladora.</span>
+            Somos el equipo <span className="grad-text">detrás de Octopus.</span>
           </SectionHeading>
           <p className="max-w-xl text-lg leading-relaxed text-mist/75">
-            Trabajo desde Panamá como desarrolladora full-stack. Me gusta entender el problema del negocio antes de
+            Trabajamos desde Panamá como equipo full-stack. Nos gusta entender el problema del negocio antes de
             elegir la tecnología, y escribir código que se pueda leer, probar y mantener. Octopus es la forma en que
-            ofrezco ese trabajo: directo, sin intermediarios y sin discurso vacío.
+            ofrecemos ese trabajo: directo, sin intermediarios y sin discurso vacío.
           </p>
         </Reveal>
         <div className="space-y-px overflow-hidden rounded-3xl border border-line bg-line">

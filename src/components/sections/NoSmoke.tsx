@@ -11,7 +11,7 @@ export function NoSmoke() {
           eyebrow="Sin humo"
           lead="No necesitas entender de tecnología para trabajar conmigo. Sí necesitas saber qué esperar."
         >
-          Lo que sí, <span className="font-serif italic font-normal grad-text">y lo que no.</span>
+          Lo que sí, <span className="grad-text">y lo que no.</span>
         </SectionHeading>
       </Reveal>
       <div className="grid gap-5 md:grid-cols-2">

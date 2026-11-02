@@ -10,7 +10,6 @@
   --color-blue: #3b82f6;
   --color-mist: #f1effa;
   --font-sans: "Geist", "Helvetica Neue", Arial, sans-serif;
-  --font-serif: "Instrument Serif", "Times New Roman", serif;
   --animate-marquee: marquee 38s linear infinite;
   --animate-float: float 14s ease-in-out infinite;
 }
