@@ -81,6 +81,8 @@ Fuente única en `src/data/content.ts`. Resumen:
 - **Correo nuevo:** `marianoctopus.dev@gmail.com` en `CONTACT` (única fuente; usado por el botón de contacto).
 - **`og:image` absoluta:** `https://marianc-programing.github.io/OCTOPUS/og-image.jpg`.
 - **README.md** renovado (stack, estructura, comandos, deploy).
+- **README con portada** (logo `public/OCTOPUS.svg`, badge del workflow, secciones y nota de licencia) y metadatos del repo: descripción en About, website y topics (`react`, `typescript`, `vite`, `tailwindcss`, `github-pages`, `webgl`).
+- **Licencia MIT** (archivo `LICENSE`) con nota del derivado del hero; README enlaza a ella. GitHub ya la detecta como MIT en el About.
 - Verificado en dist: 0 apariciones del correo viejo, 0 suscriptores de "Instrument"; build/tsc/oxlint en 0/0.
 
 ### Pendiente / a vigilar

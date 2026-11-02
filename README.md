@@ -64,6 +64,11 @@ npm run build   # build de producción a dist/
 
 <div align="center">
 
+## Licencia
+
+[MIT](LICENSE) — el componente del hero deriva del trabajo de
+[guglielmogiannattasio.it](https://guglielmogiannattasio.it); su cabecera de autoría se conserva en el archivo fuente.
+
 Hecho con Vite, React, Tailwind y un pulpo morado 🐙
 
 </div>
