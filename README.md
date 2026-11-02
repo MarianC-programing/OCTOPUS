@@ -1,14 +1,30 @@
-# Octopus — octopus.dev
+<div align="center">
 
-Sitio de identidad de **Octopus team**: desarrollo web y sistemas a medida desde Panamá.
+<img src="public/OCTOPUS.svg" width="120" alt="Pulpo morado de Octopus" />
 
-**En línea:** https://marianc-programing.github.io/OCTOPUS/
+# Octopus team
+
+**Software que hace lo que dice.**
+
+Desarrollo web y sistemas a medida desde Panamá.
+
+<a href="https://marianc-programing.github.io/OCTOPUS/">Ver el sitio en línea →</a>&nbsp;&nbsp;·&nbsp;&nbsp;<a href="#desarrollo">Desarrollo</a>&nbsp;·&nbsp;<a href="#deploy-github-pages">Deploy</a>
+
+[![Deploy a GitHub Pages](https://github.com/MarianC-programing/OCTOPUS/actions/workflows/deploy.yml/badge.svg)](https://github.com/MarianC-programing/OCTOPUS/actions/workflows/deploy.yml)
+
+</div>
+
+## Qué es esto
+
+El sitio de identidad de **Octopus team**: hero con partículas WebGL que reaccionan al cursor,
+secciones que explican qué construimos y cómo trabajamos, faq y contacto por correo.
+Estático, oscuro y sin humo.
 
 ## Stack
 
 - **Vite 8 + React 19 + TypeScript**
 - **Tailwind CSS v4** (tema en `src/index.css`)
-- **Hero "Liquid Sculpture"**: partículas WebGL2 que reaccionan al cursor/touch (`src/components/ui/liquid-sculpture-hero.tsx`)
+- **Hero "Liquid Sculpture"**: partículas WebGL2 que reaccionan al cursor y al touch (`src/components/ui/liquid-sculpture-hero.tsx`)
 - oxlint preconfigurado en la plantilla de Vite
 
 ## Estructura
@@ -37,11 +53,17 @@ npm run build   # build de producción a dist/
 
 - Workflow: `.github/workflows/deploy.yml` — se ejecuta en cada push a `main`.
 - La base se inyecta con `VITE_BASE=/OCTOPUS/` (ver `vite.config.ts`).
-- Pages debe estar configurado con origen **GitHub Actions** (`build_type: workflow`), no "Deploy from a branch". Si se cambia, es un PUT a `PUT /repos/MarianC-programing/OCTOPUS/pages` con `{"build_type":"workflow"}`.
+- Pages debe estar configurado con origen **GitHub Actions** (`build_type: workflow`), no "Deploy from a branch".
 - El repo es **público** (requerido por Pages gratis).
 
 ## Notas
 
 - El correo de contacto es `marianoctopus.dev@gmail.com` (única fuente: `CONTACT` en `src/data/content.ts`).
 - La imagen del hero (`octopus-hero.webp`) se recortó con canal alfa derivado por brillo; el modo alpha del componente la muestrea.
-- `og:image` apunta a la URL absoluta de Pages para que previsualizen bien los social cards.
+- `og:image` apunta a la URL absoluta de Pages para que previsualicen bien los social cards.
+
+<div align="center">
+
+Hecho con Vite, React, Tailwind y un pulpo morado 🐙
+
+</div>
