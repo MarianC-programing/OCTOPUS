@@ -22,7 +22,7 @@ Estático, oscuro y sin humo.
 
 ## Stack
 
-- **Vite 8 + React 19 + TypeScript**
+- **Vite 8 + React 19 + TypeScript**, gestionado con **pnpm**
 - **Tailwind CSS v4** (tema en `src/index.css`)
 - **Hero "Liquid Sculpture"**: partículas WebGL2 que reaccionan al cursor y al touch (`src/components/ui/liquid-sculpture-hero.tsx`)
 - oxlint preconfigurado en la plantilla de Vite
@@ -42,11 +42,11 @@ docs/CONTEXT.md          # contexto del proyecto y estado de las sesiones
 ## Desarrollo
 
 ```bash
-npm ci          # instalar dependencias
-npm run dev     # http://localhost:5173/
-npx tsc -b      # typecheck
-npx oxlint      # lint (debe quedar en 0/0)
-npm run build   # build de producción a dist/
+pnpm install            # instalar dependencias
+pnpm dev                # http://localhost:5173/
+pnpm exec tsc -b        # typecheck
+pnpm lint               # lint (debe quedar en 0/0)
+pnpm build              # build de producción a dist/
 ```
 
 ## Deploy (GitHub Pages)

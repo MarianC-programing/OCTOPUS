@@ -62,6 +62,7 @@ Fuente única en `src/data/content.ts`. Resumen:
 ## 4. Decisiones técnicas
 
 - **Stack:** Vite + React 19 + TypeScript + Tailwind v4 + oxlint (+ lucide-react; íconos de marca inline SVG en `Contact.tsx` porque la v1 de lucide no los trae).
+- **Gestor de paquetes:** pnpm (versión fijada en `packageManager`; lockfile `pnpm-lock.yaml`). No se usa npm ni yarn. Proceso de trabajo en `PLAN-MODE-OCTOPUS.MD`.
 - **Alias** `@` → `src`.
 - **Base de despliegue:** `VITE_BASE` definido en el workflow (`/OCTOPUS/`); `vite.config.ts` cae a `/` en dev.
 - **Hero:** copiado a `src/components/ui/liquid-sculpture-hero.tsx`. El acento del titular usa la misma Geist con `font-style: normal` (los defaults del componente apuntaban a Instrument Serif italic; se parchearon `accentFont` y `.sh-accent`).
@@ -101,9 +102,9 @@ Fuente única en `src/data/content.ts`. Resumen:
 
 ```bash
 cd /home/marian01/ProyectosDev/OCTOPUS
-npm run dev          # desarrollo (localhost:5173)
-npx tsc -b           # typecheck
-npx oxlint           # lint (0/0 esperado)
-npm run build        # build de producción
+pnpm dev             # desarrollo (localhost:5173)
+pnpm exec tsc -b     # typecheck
+pnpm lint            # lint (0/0 esperado)
+pnpm build           # build de producción
 gh run list --repo MarianC-programing/OCTOPUS --limit 3   # estado del deploy
 ```
