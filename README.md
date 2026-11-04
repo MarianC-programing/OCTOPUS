@@ -49,6 +49,12 @@ pnpm lint               # lint (debe quedar en 0/0)
 pnpm build              # build de producción a dist/
 ```
 
+## Integración continua
+
+`.github/workflows/ci.yml` se ejecuta en cada pull request y en cada push a ramas de trabajo.
+Ejecuta typecheck (`tsc -b`), lint y build con pnpm. Los mismos comandos se pueden correr en local
+antes de abrir la PR (ver Desarrollo).
+
 ## Deploy (GitHub Pages)
 
 - Workflow: `.github/workflows/deploy.yml` — se ejecuta en cada push a `main`.

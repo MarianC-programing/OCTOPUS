@@ -63,6 +63,7 @@ Fuente única en `src/data/content.ts`. Resumen:
 
 - **Stack:** Vite + React 19 + TypeScript + Tailwind v4 + oxlint (+ lucide-react; íconos de marca inline SVG en `Contact.tsx` porque la v1 de lucide no los trae).
 - **Gestor de paquetes:** pnpm (versión fijada en `packageManager`; lockfile `pnpm-lock.yaml`). No se usa npm ni yarn. Proceso de trabajo en `PLAN-MODE-OCTOPUS.MD`.
+- **CI:** `.github/workflows/ci.yml` verifica `tsc -b`, `lint` y `build` en cada PR y en pushes a ramas de trabajo (pnpm, Node 22). Los checks se marcarán como obligatorios en la protección de `main` tras el merge. Pendiente: actualizar las actions de `deploy.yml` (usa versiones sobre Node 20) en un issue aparte.
 - **Alias** `@` → `src`.
 - **Base de despliegue:** `VITE_BASE` definido en el workflow (`/OCTOPUS/`); `vite.config.ts` cae a `/` en dev.
 - **Hero:** copiado a `src/components/ui/liquid-sculpture-hero.tsx`. El acento del titular usa la misma Geist con `font-style: normal` (los defaults del componente apuntaban a Instrument Serif italic; se parchearon `accentFont` y `.sh-accent`).
