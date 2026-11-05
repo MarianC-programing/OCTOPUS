@@ -1,6 +1,6 @@
 # OCTOPUS — Contexto del proyecto y estado de la sesión
 
-> Última actualización: 2026-11-02 · Sesión 2
+> Última actualización: 2026-11-04 · Sesión 3
 > Leer este archivo antes de continuar (regla 1 del `CLAUDE.md` general).
 
 ---
@@ -73,6 +73,15 @@ Fuente única en `src/data/content.ts`. Resumen:
 ---
 
 ## 5. Estado actual
+
+### Indexación en Google (sesión 3, rama `feature/indexacion-google`)
+- **Preparado en el repo:** `public/sitemap.xml` (única URL del sitio), `public/google7c81436b5975a3be.html` (verificación de Search Console, método *Archivo HTML*, propiedad de prefijo de URL `https://marianc-programing.github.io/OCTOPUS/`), y en `index.html`: canonical, `og:url`/`og:site_name`/`og:locale`, metadatos de Twitter, JSON-LD `ProfessionalService` y `<noscript>` con el mensaje esencial.
+- **Decisión:** no se crea `robots.txt`. Los rastreadores solo lo leen en la raíz del host (`marianc-programing.github.io/robots.txt`), que no pertenece a este repo; el sitemap se envía directamente en Search Console.
+- **JSON-LD sin `sameAs`:** GitHub y LinkedIn son cuentas personales (ver pendiente 3); no se enlazan a la marca hasta confirmarlo.
+- **Pasos manuales tras el merge y el deploy** (los hace la usuaria en Search Console): 1) *Verificar* la propiedad; 2) *Sitemaps* → enviar `sitemap.xml`; 3) *Inspección de URL* → `https://marianc-programing.github.io/OCTOPUS/` → *Solicitar indexación*. La indexación puede tardar de días a semanas.
+- **Para acelerar:** enlazar el sitio desde `mi-portafolio` y desde el perfil de GitHub (el website del repo ya está configurado).
+- **Mantenimiento:** si cambia el dominio (ver pendiente 4), actualizar canonical, `og:url`, JSON-LD, `sitemap.xml` y crear una propiedad nueva en Search Console. Actualizar `lastmod` del sitemap cuando cambie el contenido.
+- **No tocar** `public/google7c81436b5975a3be.html`: si se borra, Google pierde la verificación.
 
 ### Hecho en la sesión 2
 - **Deploy arreglado.** Causa del fallo: Pages estaba en modo *legacy* ("Deploy from a branch") y el workflow exige modo Actions → `configure-pages@v5` fallaba con `Get Pages site failed`. Además el build legacy había publicado el `index.html` crudo (página rota con `/src/main.tsx`). Fix: `PUT /repos/.../pages -f build_type=workflow` + rerun del workflow → **deploy success** en https://marianc-programing.github.io/OCTOPUS/.
