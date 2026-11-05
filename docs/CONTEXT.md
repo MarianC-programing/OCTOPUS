@@ -74,7 +74,7 @@ Fuente única en `src/data/content.ts`. Resumen:
 
 ## 5. Estado actual
 
-### Indexación en Google (sesión 3, rama `feature/indexacion-google`)
+### Indexación en Google (sesión 3, rama `feature/7-indexacion-google`, issue #7)
 - **Preparado en el repo:** `public/sitemap.xml` (única URL del sitio), `public/google7c81436b5975a3be.html` (verificación de Search Console, método *Archivo HTML*, propiedad de prefijo de URL `https://marianc-programing.github.io/OCTOPUS/`), y en `index.html`: canonical, `og:url`/`og:site_name`/`og:locale`, metadatos de Twitter, JSON-LD `ProfessionalService` y `<noscript>` con el mensaje esencial.
 - **Decisión:** no se crea `robots.txt`. Los rastreadores solo lo leen en la raíz del host (`marianc-programing.github.io/robots.txt`), que no pertenece a este repo; el sitemap se envía directamente en Search Console.
 - **JSON-LD sin `sameAs`:** GitHub y LinkedIn son cuentas personales (ver pendiente 3); no se enlazan a la marca hasta confirmarlo.
