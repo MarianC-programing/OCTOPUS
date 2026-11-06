@@ -77,7 +77,8 @@ Fuente única en `src/data/content.ts`. Resumen:
 ### Indexación en Google (sesión 3, rama `feature/7-indexacion-google`, issue #7)
 - **Preparado en el repo:** `public/sitemap.xml` (única URL del sitio), `public/google7c81436b5975a3be.html` (verificación de Search Console, método *Archivo HTML*, propiedad de prefijo de URL `https://marianc-programing.github.io/OCTOPUS/`), y en `index.html`: canonical, `og:url`/`og:site_name`/`og:locale`, metadatos de Twitter, JSON-LD `ProfessionalService` y `<noscript>` con el mensaje esencial.
 - **Decisión:** no se crea `robots.txt`. Los rastreadores solo lo leen en la raíz del host (`marianc-programing.github.io/robots.txt`), que no pertenece a este repo; el sitemap se envía directamente en Search Console.
-- **JSON-LD sin `sameAs`:** GitHub y LinkedIn son cuentas personales (ver pendiente 3); no se enlazan a la marca hasta confirmarlo.
+- **JSON-LD con `founder` y `sameAs`:** la usuaria confirmó (2026-11-05) que sus cuentas personales de GitHub y LinkedIn representan a la marca. Si se crean cuentas de "octopus-team" o dominio propio, actualizar `founder`/`sameAs` (ver pendiente 3).
+- **Título y `robots`:** título `Octopus team — Desarrollo web y sistemas a medida en Panamá` (con palabras clave) y `robots: index, follow, max-image-preview:large`. Reemplaza el trabajo de la PR #1 (`seo/indexacion-google`).
 - **Pasos manuales tras el merge y el deploy** (los hace la usuaria en Search Console): 1) *Verificar* la propiedad; 2) *Sitemaps* → enviar `sitemap.xml`; 3) *Inspección de URL* → `https://marianc-programing.github.io/OCTOPUS/` → *Solicitar indexación*. La indexación puede tardar de días a semanas.
 - **Para acelerar:** enlazar el sitio desde `mi-portafolio` y desde el perfil de GitHub (el website del repo ya está configurado).
 - **Mantenimiento:** si cambia el dominio (ver pendiente 4), actualizar canonical, `og:url`, JSON-LD, `sitemap.xml` y crear una propiedad nueva en Search Console. Actualizar `lastmod` del sitemap cuando cambie el contenido.
@@ -99,7 +100,7 @@ Fuente única en `src/data/content.ts`. Resumen:
 ### Pendiente / a vigilar
 1. Pase visual completo de secciones en móvil con screenshots (requiere la ventana del navegador visible).
 2. Clásico de `favicon` de 1 MB sigue vigente (respaldo PNG ya en `public/`); conviene optimizar cuando haya chance.
-3. Links de **GitHub/LinkedIn** siguen siendo cuentas personales de Marian; si la marca crece, evaluar cuentas de "octopus-team" o links hacia `octopus.dev` (dominio futuro).
+3. Links de **GitHub/LinkedIn** son cuentas personales de Marian y están confirmados como representantes de la marca (`founder`/`sameAs`); si la marca crece, evaluar cuentas de "octopus-team" o links hacia `octopus.dev` (dominio futuro).
 4. Dominio propio (`octopus.dev`?) — decidir; si se compra, cambiar `og:image` y `VITE_BASE`.
 
 ### A confirmar con la usuaria
