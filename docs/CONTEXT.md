@@ -82,6 +82,7 @@ Fuente única en `src/data/content.ts`. Resumen:
 - **Pasos manuales tras el merge y el deploy** (los hace la usuaria en Search Console): 1) *Verificar* la propiedad; 2) *Sitemaps* → enviar `sitemap.xml`; 3) *Inspección de URL* → `https://marianc-programing.github.io/OCTOPUS/` → *Solicitar indexación*. La indexación puede tardar de días a semanas.
 - **Para acelerar:** enlazar el sitio desde `mi-portafolio` y desde el perfil de GitHub (el website del repo ya está configurado).
 - **Mantenimiento:** si cambia el dominio (ver pendiente 4), actualizar canonical, `og:url`, JSON-LD, `sitemap.xml` y crear una propiedad nueva en Search Console. Actualizar `lastmod` del sitemap cuando cambie el contenido.
+- **Estado en Search Console (2026-11-05):** propiedad verificada; sitemap enviado el 2026-11-04 y todavía en "No se ha podido obtener" (el archivo responde 200, `application/xml` y es válido; suele ser un estado transitorio de propiedades nuevas, no bloquea la indexación de una página única); "Probar URL publicada" correcta e indexación de la URL solicitada. Siguiente: esperar a Google, revisar con Inspección de URL a los 3-4 días sin repetir la solicitud, y revisar el sitemap si sigue igual pasada una semana.
 - **No tocar** `public/google7c81436b5975a3be.html`: si se borra, Google pierde la verificación.
 
 ### Hecho en la sesión 2
